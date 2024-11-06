@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="{% static 'blog/startingpage.css' %}">
+</head>
+<body>
+    <h1 class="text1">Introduction</h1>
+    <section class="introduction-section">
+        <h2 class="text2">
+            Food is the basic necessity of every organism. Food is a substance that we consume 
+            in order to derive energy to run our body and nutrition to grow.
+            All living organisms must have food to survive. 
+            It provides nourishment to our body system and makes sure that it works smoothly.
+        </h2>
+    </section>
+        <a href="{% url 'post_data' %}"><h2 class="latest-post-heading">Our Latest Post</h2></a>
+        <div class="image-container">
+            <img src="{% static 'blog/img2.jpeg' %}" alt="img1">
+            <img src="{% static 'blog/office.jpeg' %}" alt="img2">
+            <img src="{% static 'blog/img3.jpeg' %}" alt="img3">
+        </div>
+        <section class="latest-post-section">
+        <div class="title-container">
+            <h4 class="title">Title 1</h4>
+            <h4 class="title">Title 2</h4>
+            <h4 class="title">Title 3</h4>
+        </div>
+        <div>
+        <h2 class="text3">About Us</h2>
+        <h2 class="text4">
+            Include ingredients, measurements, step-by-step cooking instructions, and serving suggestions. 
+            Embed personal experiences: We've said it before, but share personal experiences! It builds 
+            a connection with your audience and adds to your blog post.
+        </h2>
+        </div>
+    </section>
+</body>
+</html>
